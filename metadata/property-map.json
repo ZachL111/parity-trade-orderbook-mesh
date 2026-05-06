@@ -1,0 +1,28 @@
+{
+  "repo": "parity-trade-orderbook-mesh",
+  "language": "Zig",
+  "category": "Trading systems",
+  "goal": "Design a Zig verification harness for orderbook systems, covering protocol validation, framed sample traffic, and failure-oriented tests.",
+  "weights": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 5
+  },
+  "thresholds": {
+    "ship": 152,
+    "watch": 110
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}

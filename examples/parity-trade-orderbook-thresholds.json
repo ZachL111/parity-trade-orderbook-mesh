@@ -1,0 +1,17 @@
+{
+  "repo": "parity-trade-orderbook-mesh",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 5,
+    "ship": 152,
+    "watch": 110
+  },
+  "terms": [
+    "spread pressure",
+    "fill risk",
+    "portfolio drift",
+    "quote width"
+  ]
+}
